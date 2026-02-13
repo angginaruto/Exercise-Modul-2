@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      .container1 {
+        height: 611px;
+        width: 343px;
+        background-color: #f2eae0;
+        padding: 20px;
+        padding-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      .container2 {
+        height: 611px;
+        width: 343px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .container2 img {
+        padding-top: 0;
+        width: 343px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .container3 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+      }
+      .parfum {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #6c7289;
+      }
+      .nama {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0;
+        margin: 0;
+      }
+      .keterangan {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0;
+        color: #6c7289;
+      }
+      .container4 {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .harga {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0;
+        margin: 0;
+        color: #3d8168;
+      }
+      .harga_asal {
+        color: #6c7289;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0px;
+        text-decoration: line-through;
+      }
+      .container5 {
+        width: 295px;
+        height: 48px;
+        position: absolute; /* supaya top & left bekerja */
+        top: 539px;
+        left: 25px;
+        transform: rotate(0deg); /* angle */
+        opacity: 1;
+        border-radius: 8px;
+        background-color: #3d8168;
+        margin-left: 28px;
+        margin-top: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .keranjang {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700; /* bold */
+        font-size: 14px;
+        line-height: 100%; /* bisa juga 1 */
+        letter-spacing: 0px;
+        color: white;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uji coba CSS</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="container2">
+        <img src="Screenshot 2026-02-13 101943.png" />
+        <div class="container3">
+          <p class="parfum">perfume</p>
+          <p class="nama">Gabrielle Essence Eau De Parfum</p>
+          <p class="keterangan">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="container4">
+            <p class="harga">$149.99</p>
+            <p class="harga_asal">$169.99</p>
+          </div>
+          <div class="container5">
+            <p>🛒</p>
+            <p class="keranjang">Add to Cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
