@@ -1,0 +1,192 @@
+body {
+  height: 100vh;
+  background-color: #eef1f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 255px);
+  gap: 30px;
+  max-width: 1110px;
+}
+
+.box1 {
+  background-color: #733fc8;
+  grid-column: span 2;
+}
+
+.box2 {
+  background-color: #48556a;
+}
+
+.box3 {
+  background-color: white;
+  grid-row: span 2;
+}
+
+.box4 {
+  background-color: white;
+}
+
+.box5 {
+  background-color: #19202d;
+  grid-column: span 2;
+}
+
+#container .box {
+  box-shadow: 40px 60px 50px -47px #48556a3f;
+  border-radius: 10px;
+}
+
+/* Tanda kutip besar di belakang testimonial */
+.testimonial::before {
+  content: "“";
+  font-size: 430px;
+  color: rgba(167, 117, 241, 1);
+  position: absolute;
+  top: -85px;
+  left: 350px;
+  z-index: -1;
+}
+
+.testimonial {
+  position: relative;
+  z-index: 1;
+  font-family: Arial, sans-serif;
+}
+
+.value {
+  height: 266px;
+  width: 95%;
+  color: white;
+  padding: 18px;
+  padding-right: 30px;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile_name > p {
+  font-size: 11px;
+  margin: 0;
+}
+
+.status {
+  opacity: 60%;
+}
+
+img {
+  height: 35px;
+  height: 35px;
+}
+
+.quote {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1; /* 100% */
+  letter-spacing: 0;
+  margin: 15px 0px;
+  padding: 0px 0px 0px 5px;
+}
+.text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0;
+  opacity: 59%;
+  margin: 0px 20px 0px 0px;
+  padding: 0px 0px 0px 5px;
+}
+
+.box2 img {
+  height: 31px;
+}
+
+.box2 .quote {
+  padding-right: 20px;
+}
+
+.box2 .text {
+  padding-right: 20px;
+}
+
+.box3 *,
+.box4 * {
+  color: rgba(72, 85, 106, 1);
+}
+
+.box3 .text,
+.box3 .quote {
+  padding: 0px 13px 0px 5px;
+}
+
+.box4 .quote,
+.box4 .text {
+  margin: 0px 50px 20px 0px;
+}
+
+.box4 .profile,
+.box5 .profile {
+  margin-bottom: 20px;
+}
+
+.box5 .quote {
+  margin: 0px 20px 20px 0px;
+}
+
+.box5 img {
+  height: 38px;
+}
+
+.box1 img {
+  height: 38px;
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    padding: 40px 20px;
+  }
+
+  #container {
+    grid-template-columns: 327px;
+    grid-template-rows: 444px;
+    max-width: 100%;
+  }
+
+  #container .box {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .value {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial::before {
+    display: none;
+  }
+
+  .box1 .text,
+  .box1 .quote {
+    padding: 0px 40px 0px 5px;
+  }
+
+  .box1 .text {
+    margin-top: 50px;
+  }
+  .box5 .text,
+  .box5 .quote {
+    padding: 0px 30px 0px 5px;
+  }
+}
