@@ -1,0 +1,142 @@
+body {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+header span {
+  display: flex;
+  gap: 20px;
+}
+
+#first-section {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+#first-section img {
+  height: 400px;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title-section button {
+  height: 78px;
+  width: 211px;
+  background-color: black;
+  color: white;
+}
+
+.title-section h2 {
+  font-size: 70px;
+  margin: 0;
+}
+
+.brandin {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 18px;
+}
+
+#second-section img {
+  width: 100vw;
+}
+
+#third-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.third-section {
+  width: 300px;
+  margin: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.text2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+}
+
+.text2 h3 {
+  font-size: 30px;
+}
+
+.text2 p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.work {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#fourth-section {
+  margin: 100px 0px;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 451px);
+  grid-template-rows: repeat(2, 480px);
+  gap: 70px;
+  justify-content: center;
+}
+
+.fc {
+  background-color: white;
+}
+
+.fc .p {
+  font-size: 25px;
+}
+
+.bold {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#fifth-section {
+  margin-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 451px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 40px;
+  justify-content: center;
+}
+
+#fifth-section div {
+  background-color: rgb(223, 221, 221);
+}
